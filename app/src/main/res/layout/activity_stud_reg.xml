@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background = "@drawable/bg5"
+        android:padding = "10dp"
+        tools:context=".StudReg">
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id = "@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_id"
+            android:hint = "Full name"
+            android:layout_marginTop = "18dp"/>
+
+        <EditText
+            android:id = "@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:layout_marginTop="18dp"
+            android:layout_below= "@+id/name"/>
+
+        <EditText
+            android:id = "@+id/regno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "Registration Number"
+            android:layout_marginTop = "18dp"
+            android:layout_below="@+id/username"/>
+
+        <EditText
+            android:id = "@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "Email ID"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/regno"/>
+
+        <EditText
+            android:id = "@+id/mobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint = "Mobile no"
+            android:layout_marginTop = "18dp"
+            android:layout_below="@+id/emailid"/>
+
+        <EditText
+            android:id = "@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/mobileno"/>
+
+        <EditText
+            android:id = "@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Retype Password"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/password"/>
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register as student"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/repassword"/>
+
+        <EditText
+            android:id = "@+id/clubname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Club name"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/btnsignup"/>
+
+        <Button
+            android:id="@+id/btnsignupEM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register as event manager"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/clubname"/>
+
+
+    </RelativeLayout>
+</ScrollView>

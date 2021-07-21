@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/bg5"
+    android:padding = "10dp"
+    tools:context=".RegisterEvent">
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resgister Event "
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+
+    <EditText
+        android:id = "@+id/eventid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_id"
+        android:hint = "Event ID"
+        android:layout_marginTop = "8dp"/>
+
+    <EditText
+        android:id = "@+id/eventname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:layout_marginTop="25dp"
+        android:layout_below= "@+id/eventid"/>
+
+    <EditText
+        android:id = "@+id/Eclubname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Club name"
+        android:layout_marginTop = "25dp"
+        android:layout_below="@+id/eventname"/>
+
+    <EditText
+        android:id = "@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Date"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/Eclubname"/>
+
+    <EditText
+        android:id = "@+id/venue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Venue"
+        android:layout_marginTop = "25dp"
+        android:layout_below="@+id/date"/>
+
+
+    <EditText
+        android:id = "@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Time"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/venue"/>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Event"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/time"/>
+
+    <Button
+        android:id="@+id/btndel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Event"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btnReg"/>
+
+</RelativeLayout>

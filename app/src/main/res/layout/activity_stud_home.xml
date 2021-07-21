@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/bg5"
+    android:padding="10dp"
+    tools:context=".StudHome">
+
+
+    <Button
+        android:id="@+id/btneventlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="Events List" />
+
+    <Button
+        android:id="@+id/btnsreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btneventlist"
+        android:layout_marginTop="77dp"
+        android:text="Register for an event/Undo Registration" />
+
+
+
+    <Button
+        android:id="@+id/btnpart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsreg"
+        android:layout_marginTop="77dp"
+        android:text="Participants List" />
+
+
+    <Button
+    android:id="@+id/btnwin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnpart"
+    android:layout_marginTop="77dp"
+    android:text="Winners List" />
+
+
+
+
+</RelativeLayout>

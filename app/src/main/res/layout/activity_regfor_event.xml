@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/bg5"
+    android:padding = "10dp"
+    tools:context=".RegforEvent">
+
+    <TextView
+        android:id="@+id/text_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register for an event"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id = "@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_id"
+        android:hint = "Name"
+        android:layout_marginTop = "15dp"/>
+
+    <EditText
+        android:id = "@+id/regNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Register number"
+        android:layout_marginTop="20dp"
+        android:layout_below= "@+id/Name"/>
+
+    <EditText
+        android:id = "@+id/Year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Year"
+        android:layout_marginTop = "20dp"
+        android:layout_below="@+id/regNo"/>
+
+    <EditText
+        android:id = "@+id/Branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Branch"
+        android:layout_marginTop = "20dp"
+        android:layout_below="@+id/Year"/>
+
+    <EditText
+        android:id = "@+id/Section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Section"
+        android:layout_marginTop = "20dp"
+        android:layout_below="@+id/Branch"/>
+
+    <EditText
+        android:id = "@+id/eventId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint = "Event ID"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Section"/>
+
+
+    <Button
+        android:id="@+id/btnRegForEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Event"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/eventId"/>
+
+
+    <Button
+        android:id="@+id/btnUndoReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Undo Registration"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btnRegForEvent"/>
+
+</RelativeLayout>
